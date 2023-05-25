@@ -1,13 +1,8 @@
 .mainInfo {
-  /* background-color: white; */ /* Elimina esta línea */
   padding: 40px;
   border-radius: 5px;
   box-sizing: border-box;
 }
-
-/* Resto del contenido del archivo WeatherMainInfo.css */
-/* ... */
-
 
 .city {
   font-size: 32px;
@@ -34,4 +29,3 @@
   font-size: 38px;
   font-weight: bold;
 }
-
