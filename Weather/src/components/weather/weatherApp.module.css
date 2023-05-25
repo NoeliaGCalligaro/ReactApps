@@ -1,0 +1,21 @@
+.weatherContainer {
+  width: 500px;
+  height: 500px;
+  margin: 150px auto;
+  transition: background-color 0.3s ease;
+}
+
+.cloudyBackground {
+  background-color: var(--cloudy-background-color);
+}
+
+.sunnyBackground {
+  background-color: var(--sunny-background-color);
+}
+
+.rainyBackground {
+  background-color: var(--rainy-background-color);
+}
+
+
+

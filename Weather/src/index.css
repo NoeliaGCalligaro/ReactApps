@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--app-background-color); /* Utilizamos una variable CSS para el color de fondo */
+}
+
+/* Agregamos las clases de colores para los diferentes climas */
+body.weather-cloudy {
+  --app-background-color: gray;
+}
+
+body.weather-sunny {
+  --app-background-color: orange;
+}
+
+body.weather-rainy {
+  --app-background-color: blue;
+}
+
+/* Resto del contenido del archivo index.css */
+/* ... */
+
