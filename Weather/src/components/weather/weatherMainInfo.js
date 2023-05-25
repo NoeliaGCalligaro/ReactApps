@@ -4,14 +4,71 @@ import styles from "./weatherMainInfo.module.css";
 export default function WeatherMainInfo({ weather }) {
   const getBackgroundColor = (condition) => {
     switch (condition) {
+      case "Clear":
+        return "lightblue";
       case "Partly cloudy":
+        return "lightgray";
+      case "Cloudy":
         return "gray";
-      case "Sunny":
-        return "orange";
-      case "Clean":
-        return "blue";
-      default:
+      case "Overcast":
+        return "darkgray";
+      case "Mist":
+        return "lightgray";
+      case "Patchy rain possible":
+        return "lightblue";
+      case "Patchy snow possible":
+        return "purple";
+      case "Patchy sleet possible":
+        return "lightpurple";
+      case "Patchy freezing drizzle possible":
+        return "darkblue";
+      case "Thundery outbreaks possible":
+        return "navy";
+      case "Blowing snow":
+        return "steelblue";
+      case "Blizzard":
+        return "steelblue";
+      case "Fog":
         return "white";
+      case "Freezing fog":
+        return "lightblue";
+      case "Patchy light drizzle":
+        return "blue";
+      case "Light drizzle":
+        return "lightblue";
+      case "Freezing drizzle":
+        return "slateblue";
+      case "Heavy freezing drizzle":
+        return "darkblue";
+      case "Patchy moderate snow":
+        return "verylightblue";
+      case "Moderate snow":
+        return "verylightblue";
+      case "Patchy heavy snow":
+        return "verylightblue";
+      case "Heavy snow":
+        return "lightblue";
+      case "Ice pellets":
+        return "transparent gray";
+      case "Light rain shower":
+        return "blue";
+      case "Moderate or heavy rain shower":
+        return "darkblue";
+      case "Torrential rain shower":
+        return "darkblue";
+      case "Light sleet showers":
+        return "lightblue";
+      case "Moderate or heavy sleet showers":
+        return "almostwhite";
+      case "Light snow showers":
+        return "lightblue";
+      case "Moderate or heavy snow showers":
+        return "white";
+        
+      case "Sunny":
+          return "orange";
+        default:
+          return "white";
     }
   };
 
@@ -25,7 +82,11 @@ export default function WeatherMainInfo({ weather }) {
       <div className={styles.country}>{weather?.location?.country}</div>
       <div className={styles.row}>
         <div>
-          <img src={`http:${weather?.current?.condition?.icon}`} width="128" alt="Weather Icon" />
+          <img
+            src={`http:${weather?.current?.condition?.icon}`}
+            width="128"
+            alt="Weather Icon"
+          />
         </div>
         <div className={styles.weatherConditions}>
           <div className={styles.condition}>
@@ -46,5 +107,3 @@ export default function WeatherMainInfo({ weather }) {
     </div>
   );
 }
-
-
