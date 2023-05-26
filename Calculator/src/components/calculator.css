@@ -21,13 +21,13 @@
   padding: 20px;
   font-size: 30px;
   border: solid 1px white;
-  background-color: black;
+  background-color: rgb(17, 22, 61);
   color: white;
   cursor: pointer;
 }
 
 .calculatorButton:hover {
-  background-color: #222;
+  background-color: rgb(46, 59, 161);
 }
 
 .calculatorScreen {

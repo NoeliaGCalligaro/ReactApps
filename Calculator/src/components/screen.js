@@ -6,7 +6,7 @@ export default function Screen() {
   return (
     <div className="calculatorScreen">
       <div>
-        Memory: {calculator.memory} Op: {calculator.operation}
+       {calculator.memory}   {calculator.operation}
       </div>
       <div className="calculatorCurrentValue">
         {calculator.currentValue}
